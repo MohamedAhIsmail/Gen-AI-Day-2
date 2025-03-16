@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickSort Web Interface</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>QuickSort Algorithm</h1>
+      <input
+        type="text"
+        id="arrayInput"
+        placeholder="Enter numbers separated by commas"
+      />
+      <button onclick="startSorting()">Start Sorting</button>
+      <h2>Sorted Array:</h2>
+      <p id="sortedArray"></p>
+
+      <h2>Benchmark Results:</h2>
+      <p id="benchmarkResults"></p>
+
+      <h1>Visualize Sorting</h1>
+      <canvas id="sortingCanvas" width="800" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+    <script src="parallelQuickSort.js"></script>
+  </body>
+</html>
